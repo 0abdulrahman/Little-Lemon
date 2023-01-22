@@ -1,27 +1,59 @@
 import { Route, Routes } from "react-router";
+import { useReducer } from "react";
 import "./App.css";
 import Header from "./Components/Header.js";
 import Homepage from "./Components/Homepage.js";
-import CallToAction from "./Components/CallToAction.js";
-import Specials from "./Components/Specials.js";
-import CustomersSay from "./Components/CustomersSay.js";
-import Chicago from "./Components/Chicago.js";
-import BookingPage from "./Components/BookingPage.js";
-
+import About from "./Components/About.js";
+import BookingForm from "./Components/BookingForm.js";
 import Footer from "./Components/Footer.js";
+import OrderOnline from "./Components/OrderOnline";
+import Specials from "./Components/Specials";
+import Login from "./Components/Login";
+import ConfirmedBooking from "./Components/ConfirmedBooking";
+import * as Api from "./Components/Api";
 
 function App() {
+  function updateTimes(state, action) {
+    return (state = Api.fetchAPI(new Date(action.selectedDate)));
+  }
+
+  function initializeTimes() {
+    let date = new Date();
+    return Api.fetchAPI(date);
+  }
+
+  const [availableTimes, setAvailableTimes] = useReducer(
+    updateTimes,
+    initializeTimes
+  );
+
+  function submitForm(formData) {
+    return Api.submitAPI(formData);
+  }
+
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/hero" element={<CallToAction />} />
-        <Route path="/specials" element={<Specials />} />
-        <Route path="/testimonials" element={<CustomersSay />} />
-        <Route path="/about" element={<Chicago />} />
-        <Route path="/booking" element={<BookingPage />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/specials" element={<Specials />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/order-online" element={<OrderOnline />} />
+          <Route path="/confirmed-booking" element={<ConfirmedBooking />} />
+          <Route
+            path="/booking"
+            element={
+              <BookingForm
+                availableTimes={availableTimes}
+                setAvailableTimes={setAvailableTimes}
+                submitForm={submitForm}
+              />
+            }
+          />
+        </Routes>
+      </main>
       <Footer />
     </>
   );

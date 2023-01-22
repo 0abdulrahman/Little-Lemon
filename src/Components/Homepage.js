@@ -1,4 +1,14 @@
+// import { Route, Routes } from "react-router";
+import Specials from "./Specials";
+import Testimonials from "./CustomersSay";
+import HeroSection from "./HeroSection";
 function Homepage() {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <HeroSection />
+      <Specials />
+      <Testimonials />
+    </>
+  );
 }
 export default Homepage;

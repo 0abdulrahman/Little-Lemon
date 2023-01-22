@@ -4,8 +4,7 @@ import {
   screen,
   queryByAttribute,
 } from "@testing-library/react";
-import * as AppFunctionality from "./App";
-import App from "./App";
+
 import BookingForm from "./Components/BookingForm";
 
 test("The Heading displays on the page", () => {

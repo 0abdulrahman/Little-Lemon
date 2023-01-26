@@ -928,7 +928,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .scroll-top {
   font-size: 1.5em;
   font-weight: bold;
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: flex-end;
   background-color: white;

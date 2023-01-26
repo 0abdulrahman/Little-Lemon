@@ -10,7 +10,7 @@ function About() {
             <h2>Chicago</h2>
           </div>
           <p>
-            Little Lemon is a charming neighborhood bistro thatserves simple
+            Little Lemon is a charming neighborhood bistro that serves simple
             food and classic cocktails in a lively but casual environment. The
             restaurant features a locally-sourced menu with daily specials.
           </p>

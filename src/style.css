@@ -84,7 +84,7 @@ body {
   position: relative;
 }
 
-.header .container a {
+.header .container > a {
   display: flex;
 }
 

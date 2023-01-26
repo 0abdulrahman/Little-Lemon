@@ -5,6 +5,9 @@ import LemonDessert from "../assets/lemon dessert.jpg";
 import delivery_image from "../assets/delivery_black.png";
 
 function Specials() {
+  function scrollTop() {
+    window.scroll({ top: 0, left: 0 });
+  }
   return (
     <section className="specials">
       <article className="container">
@@ -28,7 +31,7 @@ function Specials() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <Link to="/order-online">
+              <Link to="/order-online" onClick={scrollTop}>
                 <div className="delivery">
                   <p>Order for delivery</p>
                   <img src={delivery_image} alt="" />
@@ -49,7 +52,7 @@ function Specials() {
                 Our Bruschetta is made from grilled bread that has been smeared
                 with garlic and seasoned with salt and olive oil.
               </p>
-              <Link to="/order-online">
+              <Link to="/order-online" onClick={scrollTop}>
                 <div className="delivery">
                   <p>Order for delivery</p>
                   <img src={delivery_image} alt="" />
@@ -71,7 +74,7 @@ function Specials() {
                 ingredient has been sourced and is as authentic as can be
                 imagined.
               </p>
-              <Link to="/order-online">
+              <Link to="/order-online" onClick={scrollTop}>
                 <div className="delivery">
                   <p>Order for delivery</p>
                   <img src={delivery_image} alt="" />

@@ -10,11 +10,15 @@ function Specials() {
       <article className="container">
         <div>
           <h2>Week's specials:</h2>
-          <Link to="/order-online">Online Menu</Link>
+          <Link to="/order-online" className="order-btn">
+            Online Menu
+          </Link>
         </div>
         <div>
           <div className="card">
-            <img src={GreekSalad} alt="Food" />
+            <div className="img-container">
+              <img src={GreekSalad} alt="Food" />
+            </div>
             <div className="text">
               <div className="head">
                 <h3>Greek Salad</h3>
@@ -33,7 +37,9 @@ function Specials() {
             </div>
           </div>
           <div className="card">
-            <img src={Bruschetta} alt="Food" />
+            <div className="img-container">
+              <img src={Bruschetta} alt="Food" />
+            </div>
             <div className="text">
               <div className="head">
                 <h3>Bruschetta</h3>
@@ -52,7 +58,9 @@ function Specials() {
             </div>
           </div>
           <div className="card">
-            <img src={LemonDessert} alt="Food" />
+            <div className="img-container">
+              <img src={LemonDessert} alt="Food" />
+            </div>
             <div className="text">
               <div className="head">
                 <h3>Lemon Dessert</h3>

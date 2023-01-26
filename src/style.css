@@ -84,6 +84,14 @@ body {
   position: relative;
 }
 
+.header .container a {
+  display: flex;
+}
+
+.header .container a img {
+  max-width: 100%;
+}
+
 .header menu {
   list-style: none;
   display: flex;
@@ -345,6 +353,20 @@ body {
   overflow: hidden;
 }
 
+.specials .card .img-container {
+  max-height: 170px;
+  border-radius: 16px 16px 0 0;
+  -webkit-border-radius: 16px 16px 0 0;
+  -moz-border-radius: 16px 16px 0 0;
+  -ms-border-radius: 16px 16px 0 0;
+  -o-border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+.specials .card .img-container img {
+  width: 100%;
+}
+
 .specials article .text {
   flex: 1;
   display: flex;
@@ -408,7 +430,7 @@ body {
 }
 
 @media (max-width: 780px) {
-  .specials article > div a {
+  .order-btn {
     display: none;
   }
   .specials article > div h2 {

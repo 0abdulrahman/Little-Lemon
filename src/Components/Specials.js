@@ -8,7 +8,7 @@ function Specials() {
       <article className="container">
         <div>
           <h2>Week's specials:</h2>
-          <Link to="">Online Menu</Link>
+          <Link to="./order-online">Online Menu</Link>
         </div>
         <div>
           <div className="card">

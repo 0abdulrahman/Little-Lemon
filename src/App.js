@@ -31,6 +31,18 @@ function App() {
     return Api.submitAPI(formData);
   }
 
+  function scrollToTop(e) {
+    window.scrollTo({ top: 0, left: 0 });
+  }
+
+  window.onscroll = () => {
+    let scrollBtn = document.querySelector(".scroll-top");
+    if (window.scrollY >= 200) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
   return (
     <>
       <Header />
@@ -53,6 +65,9 @@ function App() {
             }
           />
         </Routes>
+        <button className="scroll-top" onClick={scrollToTop}>
+          🡅
+        </button>
       </main>
       <Footer />
     </>

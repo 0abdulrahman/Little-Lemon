@@ -944,6 +944,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /*              Scroll to top              */
 .scroll-top {
   font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   background-color: white;
   color: var(--main);
   padding: 5px 10px;
@@ -956,6 +960,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
+.scroll-top span {
+  display: block;
+  border: 7px solid;
+  margin-bottom: 7px;
+  border-color: transparent transparent var(--main) transparent;
+}
 /*                  Footer               */
 footer {
   background-color: var(--main);

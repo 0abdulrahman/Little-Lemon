@@ -66,7 +66,7 @@ function App() {
           />
         </Routes>
         <button className="scroll-top" onClick={scrollToTop}>
-          🡅
+          <span></span>
         </button>
       </main>
       <Footer />

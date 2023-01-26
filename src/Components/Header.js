@@ -36,14 +36,14 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <Link to="/">
+        <Link to="/Little-Lemon">
           <img className="logo" src={Logo} alt="Little Lemon" />
         </Link>
         <nav>
           <i className="fa-solid fa-bars" onClick={toggleMenu}></i>
           <menu>
             <li>
-              <Link to="/" onClick={removeMenu}>
+              <Link to="/Little-Lemon" onClick={removeMenu}>
                 Home
               </Link>
             </li>

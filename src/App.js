@@ -48,7 +48,7 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/Little-Lemon" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/specials" element={<Specials />} />
           <Route path="/login" element={<Login />} />

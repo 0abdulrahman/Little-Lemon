@@ -5,14 +5,14 @@ function Footer() {
   return (
     <footer>
       <div className="container">
-        <Link to="/">
+        <Link to="/Little-Lemon">
           <img src={Logo} alt="Logo" />
         </Link>
         <div className="f-nav">
           <p>Doormat Navigation</p>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/Little-Lemon">Home</Link>
             </li>
             <li>
               <Link to="/about">About</Link>

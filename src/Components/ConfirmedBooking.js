@@ -31,7 +31,7 @@ function ConfirmedBooking() {
         <button
           onClick={() => {
             localStorage.removeItem("booking");
-            navigate("/");
+            navigate("/Little-Lemon");
           }}
         >
           Cancel

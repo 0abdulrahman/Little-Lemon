@@ -41,22 +41,6 @@ body {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-/* .container {
-  padding: 0 18em;
-}
-
-@media (max-width: 1300px) {
-  .container {
-    padding: 0 10em;
-  }
-}
-
-@media (max-width: 960px) {
-  .container {
-    padding: 0 1em;
-  }
-} */
-
 .container {
   margin: 0 auto;
   padding: var(--mainPadding) 20px;

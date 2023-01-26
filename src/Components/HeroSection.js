@@ -8,8 +8,8 @@ function HeroSection() {
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            We are a family owned Mediterranean restaurant, focused on
+            traditional recipes served with a modern twist.
           </p>
           <Link to="/booking">Reserve a Table</Link>
         </div>

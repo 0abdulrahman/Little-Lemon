@@ -42,7 +42,7 @@ function Testimonials() {
               </div>
               <p>Alisa</p>
             </div>
-            <p>Such a clean and a nice restaurant!</p>
+            <p>Such a clean and nice restaurant!</p>
           </div>
           <div className="box">
             <h4>

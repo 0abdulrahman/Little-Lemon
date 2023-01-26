@@ -10,12 +10,9 @@ function About() {
             <h2>Chicago</h2>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            Little Lemon is a charming neighborhood bistro thatserves simple
+            food and classic cocktails in a lively but casual environment. The
+            restaurant features a locally-sourced menu with daily specials.
           </p>
         </div>
         <div className="images">

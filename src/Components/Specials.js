@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import Image from "../assets/greek salad.jpg";
+import GreekSalad from "../assets/greek salad.jpg";
+import Bruschetta from "../assets/bruchetta.jpg";
+import LemonDessert from "../assets/lemon dessert.jpg";
 import delivery_image from "../assets/delivery_black.png";
 
 function Specials() {
@@ -12,7 +14,7 @@ function Specials() {
         </div>
         <div>
           <div className="card">
-            <img src={Image} alt="Food" />
+            <img src={GreekSalad} alt="Food" />
             <div className="text">
               <div className="head">
                 <h3>Greek Salad</h3>
@@ -29,15 +31,15 @@ function Specials() {
             </div>
           </div>
           <div className="card">
-            <img src={Image} alt="Food" />
+            <img src={Bruschetta} alt="Food" />
             <div className="text">
               <div className="head">
-                <h3>Greek Salad</h3>
-                <span>$12.99</span>
+                <h3>Bruschetta</h3>
+                <span>$5.99</span>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Our Bruschetta is made from grilled bread that has been smeared
+                with garlic and seasoned with salt and olive oil.
               </p>
               <div className="delivery">
                 <p>Order for delivery</p>
@@ -46,15 +48,16 @@ function Specials() {
             </div>
           </div>
           <div className="card">
-            <img src={Image} alt="Food" />
+            <img src={LemonDessert} alt="Food" />
             <div className="text">
               <div className="head">
-                <h3>Greek Salad</h3>
-                <span>$12.99</span>
+                <h3>Lemon Dessert</h3>
+                <span>$5.00</span>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                This comes straight from grandma's recipe book, every last
+                ingredient has been sourced and is as authentic as can be
+                imagined.
               </p>
               <div className="delivery">
                 <p>Order for delivery</p>

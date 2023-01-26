@@ -2,6 +2,9 @@ import Logo from "../assets/FooterLogoGreen.png";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  function clickHandler() {
+    window.scroll({ top: 0, left: 0 });
+  }
   return (
     <footer>
       <div className="container">
@@ -12,22 +15,34 @@ function Footer() {
           <p>Doormat Navigation</p>
           <ul>
             <li>
-              <Link to="/Little-Lemon">Home</Link>
+              <Link to="/Little-Lemon" onClick={clickHandler}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" onClick={clickHandler}>
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/specials">Menu</Link>
+              <Link to="/specials" onClick={clickHandler}>
+                Menu
+              </Link>
             </li>
             <li>
-              <Link to="/booking">Reservations</Link>
+              <Link to="/booking" onClick={clickHandler}>
+                Reservations
+              </Link>
             </li>
             <li>
-              <Link to="/order-online">Order Online</Link>
+              <Link to="/order-online" onClick={clickHandler}>
+                Order Online
+              </Link>
             </li>
             <li>
-              <Link to="/login">Login</Link>
+              <Link to="/login" onClick={clickHandler}>
+                Login
+              </Link>
             </li>
           </ul>
         </div>

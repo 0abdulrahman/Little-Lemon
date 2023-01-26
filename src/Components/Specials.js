@@ -10,7 +10,7 @@ function Specials() {
       <article className="container">
         <div>
           <h2>Week's specials:</h2>
-          <Link to="./order-online">Online Menu</Link>
+          <Link to="/order-online">Online Menu</Link>
         </div>
         <div>
           <div className="card">
@@ -24,10 +24,12 @@ function Specials() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <div className="delivery">
-                <p>Order for delivery</p>
-                <img src={delivery_image} alt="" />
-              </div>
+              <Link to="/order-online">
+                <div className="delivery">
+                  <p>Order for delivery</p>
+                  <img src={delivery_image} alt="" />
+                </div>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -41,10 +43,12 @@ function Specials() {
                 Our Bruschetta is made from grilled bread that has been smeared
                 with garlic and seasoned with salt and olive oil.
               </p>
-              <div className="delivery">
-                <p>Order for delivery</p>
-                <img src={delivery_image} alt="" />
-              </div>
+              <Link to="/order-online">
+                <div className="delivery">
+                  <p>Order for delivery</p>
+                  <img src={delivery_image} alt="" />
+                </div>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -59,10 +63,12 @@ function Specials() {
                 ingredient has been sourced and is as authentic as can be
                 imagined.
               </p>
-              <div className="delivery">
-                <p>Order for delivery</p>
-                <img src={delivery_image} alt="" />
-              </div>
+              <Link to="/order-online">
+                <div className="delivery">
+                  <p>Order for delivery</p>
+                  <img src={delivery_image} alt="" />
+                </div>
+              </Link>
             </div>
           </div>
         </div>

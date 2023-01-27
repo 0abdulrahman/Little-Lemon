@@ -129,7 +129,11 @@ function BookingForm(props) {
                 aria-label="On Click"
                 type="submit"
                 disabled
-                style={{ backgroundColor: "#333333" }}
+                style={{
+                  backgroundColor: "#333333",
+                  color: "#9f9f9f",
+                  cursor: "default",
+                }}
                 value="Make your reservation"
                 id="submit-button"
               />

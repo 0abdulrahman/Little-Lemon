@@ -130,8 +130,8 @@ function BookingForm(props) {
                 type="submit"
                 disabled
                 style={{
-                  backgroundColor: "#333333",
-                  color: "#9f9f9f",
+                  backgroundColor: "#4d4d4d",
+                  color: "#2f2f2f",
                   cursor: "default",
                 }}
                 value="Make your reservation"

@@ -28,8 +28,9 @@ function Specials() {
                 <span>$12.99</span>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                The farmous greek salad of crispy lettuce, peppers, olives and
+                our Chicago style feta cheese, garnished with crunchy garlic and
+                rosemary croutons.
               </p>
               <Link to="/order-online" onClick={scrollTop}>
                 <div className="delivery">

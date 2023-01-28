@@ -342,7 +342,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 483px;
+  height: 470px;
   width: 266px;
   background-color: var(--third);
   border-radius: 16px;
@@ -385,7 +385,6 @@ body {
 .specials article .text > p {
   font-family: var(--fontSec);
   color: var(--fourth);
-  margin-bottom: 2em;
   margin-top: -30px;
   width: 100%;
 }
@@ -414,6 +413,7 @@ body {
 .specials article .text > a {
   text-decoration: none;
   color: black;
+  align-self: flex-end;
 }
 
 .specials article .delivery p {
